@@ -8,9 +8,9 @@ int main() {
     scanf("%f",&number2);
     printf("Before swap:");
     printf("\n%.0f %.0f ",number1,number2);
-    number = number1;
-    number1 = number2;
-    number2 = number;
+   number1 = number1 + number2;
+    number2=number1 - number2;
+    number1 = number1- number2; 
     printf("After swap:%.0f %.0f",number1,number2 );
     
     return 0;
